@@ -1,9 +1,14 @@
 # revive: GAN-based Face Image Enhancement
 
+###### **revive**: is a simplified version of the well-known [GFPGAN](https://github.com/TencentARC/GFPGAN). The primary goal of revive is to make GFPGAN's powerful face restoration capabilities more accessible by providing an easier setup, training, and inference pipeline. It directly utilizes GFPGAN's core models and pre-trained weights(for time being), aiming to offer a more readily usable package for high-quality face enhancement. Notably, you can utilize the complete Revive pipeline provided in this project to train or fine-tune your own face enhancement models.
+
 revive focuses on enhancing face images using Generative Adversarial Networks (GANs). It aims to restore and improve the quality of facial images by addressing degradations, improving resolution, and enhancing key facial features. It is build upon the BasicSR framework and incorporates various state-of-the-art components, including StyleGAN2, ArcFace (for identity preservation), face detection, and facial landmark parsing for targeted enhancements.
+
+
 
 ![combined results](assets/combined_results.jpg)
 
+> The training was conducted using the FFHQ dataset to ensure diversity and high-quality face representation.
 ## Installation
 
 1.  **Clone the Repository:**
