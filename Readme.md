@@ -2,6 +2,8 @@
 
 revive focuses on enhancing face images using Generative Adversarial Networks (GANs). It aims to restore and improve the quality of facial images by addressing degradations, improving resolution, and enhancing key facial features. It is build upon the BasicSR framework and incorporates various state-of-the-art components, including StyleGAN2, ArcFace (for identity preservation), face detection, and facial landmark parsing for targeted enhancements.
 
+![combined results](assets/combined_results.jpg)
+
 ## Installation
 
 1.  **Clone the Repository:**
