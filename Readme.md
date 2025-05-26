@@ -4,11 +4,12 @@
 
 revive focuses on enhancing face images using Generative Adversarial Networks (GANs). It aims to restore and improve the quality of facial images by addressing degradations, improving resolution, and enhancing key facial features. It is build upon the BasicSR framework and incorporates various state-of-the-art components, including StyleGAN2, ArcFace (for identity preservation), face detection, and facial landmark parsing for targeted enhancements.
 
-
-
 ![combined results](assets/combined_results.jpg)
 
 > The training was conducted using the FFHQ dataset to ensure diversity and high-quality face representation.
+
+for a deeper understanding of how revive works, including its architecture, training pipeline, model components, and customization options, refer to the [project documentation](https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJGU2ZDg4NTA0LTI5ODYtNGMzZS1hYWEwLTAyYjY5YmQ1NzczOQ?s=1). It provides comprehensive guidance on setting up, modifying, and extending the system for your own face enhancement tasks.
+
 ## Installation
 
 1.  **Clone the Repository:**
