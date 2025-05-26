@@ -29,6 +29,20 @@ revive focuses on enhancing face images using Generative Adversarial Networks (G
     bash setup.sh
     ```
 
+### Inference
+
+To enhance face images using a trained model, **Command:**
+```bash
+python inference_revive.py -i inputs/whole_imgs -o results -v v1.1 -s 2
+```
+
+**Explanation of Arguments:**
+
+*   `-i`: Path to the directory containing input images.
+*   `-o`: Path to the directory where enhanced images will be saved.
+*   `-v`: Model version or identifier (e.g., `v1.1`, `v1.3`). This helps the script load the correct trained model weights.
+*   `-s`: A parameter that can signify an upscaling factor, tile size, or another inference-specific setting. Refer to `inference_revive.py` for its exact interpretation.
+
 ### Training
 
 The training process uses the BasicSR framework and is configured via YAML files located in the `options/` directory. To start training,
@@ -54,19 +68,5 @@ Modify the YAML files in the `options/` directory (e.g., `train_revive_v1.yml`) 
 *   Generator and discriminator architectures (`revive/archs/`).
 *   Learning rates, batch sizes, and other training parameters.
 *   Loss function weights (pixel, adversarial, perceptual, identity).
-
-### Inference
-
-To enhance face images using a trained model, **Command:**
-```bash
-python inference_revive.py -i inputs/whole_imgs -o results -v v1.1 -s 2
-```
-
-**Explanation of Arguments:**
-
-*   `-i`: Path to the directory containing input images.
-*   `-o`: Path to the directory where enhanced images will be saved.
-*   `-v`: Model version or identifier (e.g., `v1.1`, `v1.3`). This helps the script load the correct trained model weights.
-*   `-s`: A parameter that can signify an upscaling factor, tile size, or another inference-specific setting. Refer to `inference_revive.py` for its exact interpretation.
 
 -Can be improved by transfer learning (obviously 😉)
