@@ -5,8 +5,6 @@ revive focuses on enhancing face images using Generative Adversarial Networks (G
 
 ![combined results](assets/combined_results.jpg)
 
-https://github.com/user-attachments/assets/1075a1c2-06c5-42b5-bbdb-4a8e88396897
-
 > The training was conducted using the FFHQ dataset to ensure diversity and high-quality face representation.
 
 for a deeper understanding of how revive works, including its architecture, training pipeline, model components, and customization options, refer to the [project documentation](https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJGU2ZDg4NTA0LTI5ODYtNGMzZS1hYWEwLTAyYjY5YmQ1NzczOQ?s=1). It provides comprehensive guidance on setting up, modifying, and extending the system for your own face enhancement tasks.
@@ -37,6 +35,7 @@ To enhance face images using a trained model, **Command:**
 ```bash
 python inference_revive.py -i inputs/whole_imgs -o results -v v1.1 -s 2
 ```
+https://github.com/user-attachments/assets/1075a1c2-06c5-42b5-bbdb-4a8e88396897
 
 **Explanation of Arguments:**
 
